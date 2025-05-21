@@ -1,0 +1,405 @@
+---
+import Layout from '../layouts/BlogPost.astro';
+---
+
+<Layout
+	title="About Me"
+	description="Learn more about Khaled Riyad - Software Engineer"
+	tags={[]}
+	published={true}
+>
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 0.5rem 0;
+	line-height: 1.2;
+	color: var(--text-color);
+}
+h1 {
+	font-size: 3.052em;
+}
+h2 {
+	font-size: 2.441em;
+}
+h3 {
+	font-size: 1.953em;
+}
+h4 {
+	font-size: 1.563em;
+}
+h5 {
+	font-size: 1.25em;
+}
+
+strong,
+b {
+	font-weight: 700;
+}
+
+</style>
+	<div class="bio-section">
+		<h2>Hello, I'm Khaled Riyad</h2>
+		<p class="bio-intro">
+			A Software Engineer passionate about creating efficient, scalable backend solutions.
+			I thrive on solving complex problems and building systems that make a difference.
+		</p>
+	</div>
+
+	<div class="timeline-section">
+		<h2>My Journey</h2>
+		
+		<div class="timeline-item">
+			<div class="timeline-marker"></div>
+			<div class="timeline-content">
+				<h3>Software Engineer</h3>
+				<h3 class="company">@ Awfarlak</h3>
+				<p class="timeline-period">October 2022 - Current</p>
+				<p class="timeline-description">
+					Led the development of the SpecPro System, a multi-tenant architecture serving thousands of users across the USA and UAE. Implemented process automation that reduced data collection time by 62.5% and established robust CI/CD pipelines for reliable deployments.
+				</p>
+				<div class="tech-used">
+					<span>C++</span>
+					<span>Docker</span>
+					<span>Traefik</span>
+					<span>Nginx</span>
+					<span>CI/CD</span>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="timeline-item">
+			<div class="timeline-marker"></div>
+			<div class="timeline-content">
+				<h3>Computer Science Degree</h3>
+				<h3 class="company">@ Helwan University</h3>
+				<p class="timeline-period">August 2018 - January 2023</p>
+				<p class="timeline-description">
+					Bachelor of Computer Science with a Minor in Information Systems from the Faculty of Computers and Artificial Intelligence.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="achievements-section">
+		<h2>Recognition & Open Source</h2>
+		<div class="achievement-cards">
+			<div class="achievement-card">
+				<h3>Google Summer of Code</h3>
+				<p>Open Source Developer at MariaDB Foundation, implementing expression evaluation and SQL-like function support</p>
+			</div>
+			
+			<div class="achievement-card">
+				<h3>Facebook Hacker Cup</h3>
+				<p>Reached Round 2 of the 2021 competition</p>
+			</div>
+			
+			<div class="achievement-card">
+				<h3>ICPC</h3>
+				<p>Achieved 9th Place at the 2019 Helwan University Programming Contest</p>
+			</div>
+			
+			<div class="achievement-card">
+				<h3>COVID-19 Hackathon</h3>
+				<p>Participated in the First Stage of the virtual hackathon</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="skills-section">
+		<h2>Coding Spellbook</h2>
+		
+		<div class="skills-container">
+			<div class="skill-category">
+				<h4>Languages</h4>
+				<hr>
+				<div class="skill-tags">
+					<span>PHP</span>
+					<span>Python</span>
+					<span>Java</span>
+					<span>C/C++</span>
+					<span>Golang</span>
+					<span>SQL</span>
+					<span>JavaScript</span>
+					<span>HTML/CSS</span>
+				</div>
+			</div>
+			
+			<div class="skill-category">
+				<h4>Frameworks</h4>
+				<hr>
+				<div class="skill-tags">
+					<span>Laravel</span>
+					<span>Vue.js</span>
+					<span>React</span>
+					<span>Ruby on Rails</span>
+					<span>Django</span>
+					<span>Flutter</span>
+				</div>
+			</div>
+			
+			<div class="skill-category">
+				<h4>Technologies</h4>
+				<hr>
+				<div class="skill-tags">
+					<span>Docker</span>
+					<span>Nginx</span>
+					<span>Redis</span>
+					<span>Linux</span>
+					<span>CI/CD</span>
+					<span>Git</span>
+				</div>
+			</div>
+			
+			<div class="skill-category">
+				<h4>Core Skills</h4>
+				<hr>
+				<div class="skill-tags">
+					<span>System Design</span>
+					<span>RESTful APIs</span>
+					<span>Algorithms</span>
+					<span>OOP</span>
+					<span>Design Patterns</span>
+					<span>Databases</span>
+					<span>TDD</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="connect-section">
+		<h2>Let's Connect</h2>
+		<p>I'm always interested in new opportunities and collaborations.</p>
+		<div class="social-links">
+			<a href="https://github.com/KhaledR57" target="_blank" class="social-link">
+				<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32">
+					<path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+				</svg>
+				<span>GitHub</span>
+			</a>
+			<a href="https://linkedin.com/in/khaled-amr-dev" target="_blank" class="social-link">
+				<svg viewBox="0 0 24 24" aria-hidden="true" width="32" height="32">
+					<path fill="currentColor" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+				</svg>
+				<span>LinkedIn</span>
+			</a>
+			<a href="mailto:khaled57.dev@gmail.com" class="social-link">
+				<svg viewBox="0 0 24 24" aria-hidden="true" width="32" height="32">
+					<path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+				</svg>
+				<span>Email</span>
+			</a>
+		</div>
+	</div>
+</Layout>
+
+<style>
+	.bio-section {
+		margin-bottom: 3rem;
+		text-align: center;
+	}
+	
+	.bio-intro {
+		font-size: 1.3rem;
+		line-height: 1.6;
+		max-width: 800px;
+		margin: 0 auto;
+		color: var(--text-secondary);
+	}
+	
+	.timeline-section {
+		position: relative;
+		margin: 4rem 0;
+	}
+	
+	.timeline-section::before {
+		content: '';
+		position: absolute;
+		top: 4.5rem;
+		bottom: 0;
+		left: 12px;
+		width: 2px;
+		background: var(--border-color);
+	}
+	
+	.timeline-item {
+		position: relative;
+		padding-left: 40px;
+		margin-bottom: 3rem;
+	}
+	
+	.timeline-marker {
+		position: absolute;
+		left: 0;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background: var(--accent-color);
+		border: 4px solid var(--bg-color);
+		top: 0;
+	}
+	
+	.timeline-content h3 {
+		margin-bottom: 0.5rem;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		gap: 0.5rem;
+	}
+	
+	.company {
+		font-weight: normal;
+		color: var(--accent-color);
+	}
+	
+	.timeline-period {
+		font-size: 0.9rem;
+		color: var(--text-secondary);
+		margin-bottom: 1rem;
+	}
+	
+	.timeline-description {
+		margin-bottom: 1rem;
+		line-height: 1.6;
+	}
+	
+	.tech-used {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+	
+	.tech-used span {
+		background: var(--tag-bg);
+		color: var(--tag-color);
+		padding: 0.2rem 0.6rem;
+		border-radius: 1rem;
+		font-size: 0.75rem;
+	}
+	
+	.skills-section {
+		margin: 4rem 0;
+	}
+	
+	.skills-container {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+	
+	.skill-category h3 {
+		margin-bottom: 1rem;
+		padding-bottom: 0.5rem;
+		border-bottom: 2px solid var(--border-color);
+	}
+	
+	.skill-tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+	
+	.skill-tags span {
+		background: var(--tag-bg);
+		color: var(--tag-color);
+		padding: 0.25rem 0.75rem;
+		border-radius: 2rem;
+		font-size: 0.875rem;
+	}
+	
+	.achievements-section {
+		margin: 4rem 0;
+	}
+	
+	.achievement-cards {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+		gap: 1.5rem;
+		margin-top: 2rem;
+	}
+	
+	.achievement-card {
+		background: var(--card-bg);
+		border-radius: 0.5rem;
+		padding: 1.5rem;
+		box-shadow: var(--card-shadow);
+		transition: transform 0.3s ease;
+		border: 1px solid var(--border-color);
+	}
+	
+	.achievement-card:hover {
+		transform: translateY(-5px);
+	}
+	
+	.achievement-card h3 {
+		margin-bottom: 0.75rem;
+		color: var(--accent-color);
+	}
+	
+	.achievement-card p {
+		color: var(--text-secondary);
+		line-height: 1.5;
+	}
+	
+	.connect-section {
+		margin: 4rem 0 2rem;
+		text-align: center;
+	}
+	
+	.social-links {
+		display: flex;
+		justify-content: center;
+		gap: 2rem;
+		margin-top: 2rem;
+	}
+	
+	.social-link {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.5rem;
+		text-decoration: none;
+		color: var(--text-color);
+		transition: color 0.2s ease;
+	}
+	
+	.social-link:hover {
+		color: var(--accent-color);
+	}
+	
+	.social-link svg {
+		transition: transform 0.2s ease;
+	}
+	
+	.social-link:hover svg {
+		transform: scale(1.1);
+	}
+	
+	@media (max-width: 768px) {
+		.skills-container {
+			grid-template-columns: 1fr;
+		}
+		
+		.achievement-cards {
+			grid-template-columns: 1fr;
+		}
+		
+		.social-links {
+			flex-wrap: wrap;
+		}
+	}
+	
+	/* Hide footer on about page */
+	:global(footer) {
+		display: none !important;
+	}
+	
+	/* Remove top padding from main */
+	:global(main) {
+		padding-top: 0 !important;
+	}
+</style>
